@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>집중 타이머</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+    input { width: 50px; text-align: center; }
+    button { margin: 5px; padding: 10px; }
+    #timer { font-size: 2em; margin: 20px; }
+  </style>
+</head>
+<body>
+  <h1>📚 집중 타이머</h1>
+
+  <label for="minutes">시간 설정 (분): </label>
+  <input type="number" id="minutes" min="1" max="180" value="25">
+  <br><br>
+
+  <div id="timer">25:00</div>
+  <button onclick="setTime()">시간 설정</button>
+  <button onclick="startTimer()">시작</button>
+  <button onclick="pauseTimer()">일시정지</button>
+  <button onclick="resetTimer()">초기화</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

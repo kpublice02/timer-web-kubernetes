@@ -1,0 +1,15 @@
+{
+  "name": "study-timer",
+  "version": "1.0.0",
+  "description": "A web-based study timer app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kopo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: study-timer-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: study-timer
+  template:
+    metadata:
+      labels:
+        app: study-timer
+    spec:
+      containers:
+      - name: study-timer
+        image: kpublice02/study-timer:latest
+        ports:
+        - containerPort: 3000
